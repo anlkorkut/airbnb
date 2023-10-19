@@ -7,7 +7,7 @@
 
 import React from 'react';
 import type {PropsWithChildren} from 'react';
-import Entype from 'react-native-vector-icons/Entypo';
+import Entypo from 'react-native-vector-icons/Entypo';
 import {
   SafeAreaView,
   ScrollView,
@@ -19,6 +19,7 @@ import {
 } from 'react-native';
 
 import HomeScreen from './src/screens/Home';
+import Post from './src/components/Post';
 
 import {
   Colors,
@@ -66,9 +67,12 @@ function App(): JSX.Element {
   };
 
   return (
-    <SafeAreaView style={backgroundStyle}>
-        <HomeScreen/>
+    <>
+  <StatusBar barStyle="dark-content" />
+    <SafeAreaView>
+        <Post />
     </SafeAreaView>
+    </>
   );
 }
 
