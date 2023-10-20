@@ -20,6 +20,7 @@ import {
 
 import HomeScreen from './src/screens/Home';
 import SearchResultsScreen from './src/screens/SearchResults';
+import DestinationSearchScreen from './src/screens/DestinationSearch';
 import Post from './src/components/Post';
 
 import feed from './assets/data/feed';
@@ -82,7 +83,8 @@ function App(): JSX.Element {
 {/*         <Post post={post1} /> */}
 {/*         <Post post={post2}/> */}
 {/*         <Post post={post3}/> */}
-    <SearchResultsScreen />
+{/*     <SearchResultsScreen /> */}
+    <DestinationSearchScreen />
 
     </SafeAreaView>
     </>
