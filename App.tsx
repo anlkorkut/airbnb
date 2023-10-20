@@ -19,6 +19,7 @@ import {
 } from 'react-native';
 
 import HomeScreen from './src/screens/Home';
+import SearchResultsScreen from './src/screens/SearchResults';
 import Post from './src/components/Post';
 
 import feed from './assets/data/feed';
@@ -78,9 +79,11 @@ function App(): JSX.Element {
     <>
   <StatusBar barStyle="dark-content" />
     <SafeAreaView>
-        <Post post={post1} />
-        <Post post={post2}/>
-        <Post post={post3}/>
+{/*         <Post post={post1} /> */}
+{/*         <Post post={post2}/> */}
+{/*         <Post post={post3}/> */}
+    <SearchResultsScreen />
+
     </SafeAreaView>
     </>
   );
